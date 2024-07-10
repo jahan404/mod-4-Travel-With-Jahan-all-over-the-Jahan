@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/practice.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       main{
+        display: flex;
+       } 
+       /* p{
+        background-color: gray;
+        text-align: center;
+        border: 20px solid black;
+        border-radius: 8px;
+        border-color:  black;
+        padding: 80px;
+        margin: 40px;
+       } */
+       .i{
+        text-align: center;
+        background-color: rgb(219, 207, 207);
+        color: white;
+
+        border: 20px solid rgba(31, 3, 45, 0.596);
+        border-radius: 18px;
+        border-color:  rgb(114, 12, 12);
+        padding: 60px 70px 70px;
+        /* padding: 10px; */
+        margin: 40px;
+        height: 250px;
+        width: 600px;
+        box-shadow: 20px 20px chocolate;
+
+       }
+       h1{
+        background-color: beige;
+        border-radius: 12px;
+        color: black;
+        padding: 5px 10px;
+        margin-bottom: 40px;
+       }
+       .ii{
+        padding: 15px;
+        margin-bottom: 15px;
+       }
+       .btn{
+        padding: 8px;
+        margin-top: 18px;
+        border-radius: 8px;
+        background-color: rgb(12, 151, 12);
+        box-shadow: none;
+        border: none;
+        margin-left: 12px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="i">
+            <!-- <h1>my para 1</h1> -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, natus similique nisi, ratione nam iste voluptate, quo laboriosam explicabo esse et odit porro excepturi pariatur at eum deleniti voluptatibus dicta.</p> -->
+
+       <input class="ii" type="text" placeholder="Your Name">
+       <input class="ii" type="password" name="" id="" placeholder="Enter Your Password">
+       <input class="ii" type="email" name="" id="" placeholder="Your Email">
+       <br>    
+       <input class="btn" type="button" value="login">
+       <input class="btn" type="button" value="Forget Password?">
+        </div>
+
+        <div class="i">
+            <h1>my para 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, natus similique nisi, ratione nam iste voluptate, quo laboriosam explicabo esse et odit porro excepturi pariatur at eum deleniti voluptatibus dicta.</p>
+
+        </div>
+
+        <div class="i">
+            <h1>my para 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, natus similique nisi, ratione nam iste voluptate, quo laboriosam explicabo esse et odit porro excepturi pariatur at eum deleniti voluptatibus dicta.</p>
+
+        </div>
+
+        
+    </main>
+    
+    <footer>
+
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
